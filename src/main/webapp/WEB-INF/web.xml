@@ -1,7 +1,38 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Все что было сгенерировано maven мы удалили, посмотрим, что именно мы написали
+вместо этого-->
+<!--Открывается все тегом web-app, после него определяется пространство имен-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1">
+  <!--Определяем представление имени-->
+  <display-name>spring-course-mvc</display-name>
+  <!--Этот элемент определяет какие jar файлы мы будем сканировать-->
+  <absolute-ordering />
+  <!--А этот элемент определяет сервлет который мы ищем при сканировании, в нашем случае
+   это будет специальный сервлет Spring MVC-->
+  <servlet>
+    <!--Указываем имя сервлета, класс, класс указывается полны именем-->
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <!--В этом блоке идут дополнительные параметры, мы тут указываем файл с конфигурацией
+    Spring-->
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/applicationContext.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <!--А здесь определяется по какому имени мы будем обращаться к сервлету в url строке,
+  как мы можем понять, наш диспетчер будет вызываться каждый раз, когда мы вообще что-то
+  будем вызывать. Определяя все другие сервлеты, мы будем здесь писать какой командо в url
+  мы к ним обращаемся. Например, мы создали сервлет "Hello", здесь мы укажем, что обращаемся
+  к нему /hello, то есть полный запрос в браузере будет выглядеть так:
+  https://localhost:8080/hello. Вернемся в Lesson_35 на 37 строку-->
+  <servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
 </web-app>
