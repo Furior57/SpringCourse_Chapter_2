@@ -19,4 +19,16 @@ public class MyFirstController {
         return "first-view";
     }
 
+    // Мы определили два метода возвращающие разные view в ответ на разные запросы.
+    // Теперь нам необходимо создать соответствующие view.
+    @RequestMapping("/askDetails")
+    public String askEmployeeDetails() {
+        return "ask-emp-details-view";
+    }
+
+    @RequestMapping("/showDetails")
+    public String showEmployeeDetails() {
+        return "show-emp-details-view";
+    }
+
 }

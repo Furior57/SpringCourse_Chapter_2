@@ -9,12 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b75050-7b2e-477e-aaf4-fa0623a207be" name="Changes" comment="08.08.22 Spring MVC configuration">
-      <change afterPath="$PROJECT_DIR$/src/main/Part_four_SpringMVC/Lesson_36_FirstMVCApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Part_four_SpringMVC/service/controllers/MyFirstController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/first-view.jsp" afterDir="false" />
+    <list default="true" id="11b75050-7b2e-477e-aaf4-fa0623a207be" name="Changes" comment="08.08.22 Spring MVC First Application">
+      <change afterPath="$PROJECT_DIR$/src/main/Part_four_SpringMVC/Lesson_37_ViewForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/ask-emp-details-view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/show-emp-details-view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Part_four_SpringMVC/service/controllers/MyFirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Part_four_SpringMVC/service/controllers/MyFirstController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/first-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/first-view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -160,7 +162,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659938861710</updated>
       <workItem from="1659938863861" duration="2314000" />
-      <workItem from="1659941685601" duration="11017000" />
+      <workItem from="1659941685601" duration="15854000" />
     </task>
     <task id="LOCAL-00001" summary="08.08.22 Create MVC Project">
       <created>1659939259000</created>
@@ -176,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659951808780</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="08.08.22 Spring MVC First Application">
+      <created>1659958628689</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659958628689</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +206,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="08.08.22 Create MVC Project" />
     <MESSAGE value="08.08.22 Spring MVC configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="08.08.22 Spring MVC configuration" />
+    <MESSAGE value="08.08.22 Spring MVC First Application" />
+    <option name="LAST_COMMIT_MESSAGE" value="08.08.22 Spring MVC First Application" />
   </component>
 </project>
