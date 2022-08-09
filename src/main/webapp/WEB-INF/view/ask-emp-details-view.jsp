@@ -15,6 +15,7 @@ input - здесь мы определяем тип ввода, параметр
 input/ - закрывающий тег, куда мы передаем параметром тип этого действия, в нашем случае, подтверждение
 ввода-->
 <form action="showDetails" method="get">
+    <!---->
     <input type="text" name="employeeName" placeholder="Write your name">
     <input type="submit"/>
     <!--Здесь мы закончили, создадим теперь второй view, который обработает команду /showDetails.
