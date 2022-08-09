@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 // @Controller. Причем указывать что это компонент мы уже не должны, так как аннотация
 // @Controller является разновидностью аннотации @Component.
 @Controller
+//@RequestMapping("/employee")
 public class MyFirstController {
     // Теперь создадим метод с помощью которого будет вызываться наш view. Для начала мы поставим
     // аннотацию @RequestMapping, она указывает при каком адресе должен срабатывать наш метод.
