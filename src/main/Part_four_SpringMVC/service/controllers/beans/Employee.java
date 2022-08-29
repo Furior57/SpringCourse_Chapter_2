@@ -16,21 +16,31 @@ public class Employee {
 
     private String car;
 
-    private Map<String,String> carList;
+    private String[] languages;
+
+    private Map<String,String> carsList;
 
     public Employee() {
-        this.carList = new HashMap<>();
-        carList.put("BMW","BMW");
-        carList.put("Audi","Audi");
-        carList.put("Mercedes-benz","Mercedes");
+        carsList = new HashMap<>();
+        carsList.put("BMW","BMW");
+        carsList.put("Audi","Audi");
+        carsList.put("Mercedes-benz","Mercedes");
     }
 
-    public Map<String, String> getCarList() {
-        return carList;
+    public String[] getLanguages() {
+        return languages;
     }
 
-    public void setCarList(Map<String, String> carList) {
-        this.carList = carList;
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
+    }
+
+    public Map<String, String> getCarsList() {
+        return carsList;
+    }
+
+    public void setCarsList(Map<String, String> carList) {
+        this.carsList = carList;
     }
 
     public String getCar() {
