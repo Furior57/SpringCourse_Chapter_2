@@ -1,6 +1,9 @@
 package main.Part_four_SpringMVC.service.controllers.beans;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Employee {
 
     private String name;
@@ -11,7 +14,31 @@ public class Employee {
 
     private String department;
 
+    private String car;
+
+    private Map<String,String> carList;
+
     public Employee() {
+        this.carList = new HashMap<>();
+        carList.put("BMW","BMW");
+        carList.put("Audi","Audi");
+        carList.put("Mercedes-benz","Mercedes");
+    }
+
+    public Map<String, String> getCarList() {
+        return carList;
+    }
+
+    public void setCarList(Map<String, String> carList) {
+        this.carList = carList;
+    }
+
+    public String getCar() {
+        return car;
+    }
+
+    public void setCar(String car) {
+        this.car = car;
     }
 
     public String getName() {
