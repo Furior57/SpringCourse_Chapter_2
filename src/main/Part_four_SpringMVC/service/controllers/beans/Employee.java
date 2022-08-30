@@ -1,9 +1,7 @@
 package main.Part_four_SpringMVC.service.controllers.beans;
 
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,8 +32,24 @@ public class Employee {
     @NotEmpty(message = "Surname is required field!")
     @NotBlank(message = "Surname is required field!")
     private String surname;
-
+    // Все очень просто. Смотрим как мы ограничиваем значение ниже.
+    // Не забываем прописать во view отображение ошибки.
+    // Ниже мы определили новое поле phoneNumber, перейдем к нему
+    @Min(value = 500, message = "must be greater than 499")
+    @Max(value = 2000, message = "must be less than 2001")
     private int salary;
+    // В каких то случаях мы захотим чтобы наши данные соответствовали какому-то шаблону.
+    // В этом нам помогут регулярные выражения. Подробно изучить их придется самим, здесь мы просто
+    // опишем саму возможность их использования. Однако все же опишем, что это такое.
+    // Регулярные выражения - это некий шаблон набранный специальным синтаксисом, его задача
+    // найти совпадения в тексте, согласно своему синтаксису.
+    // Мы воспользуемся аннотацией @Pattern, в которую можно передавать регулярное выражение,
+    // делается это с помощью параметра regexp, который принимает строку с регуляркой.
+    // В нашем случае мы ищем строку вида XX-XX-XX, где Х-цифра, каждые две цифры разделены
+    // дефисом.
+    @Pattern(regexp = "\\d{2}-\\d{2}-\\d{2}", message = "Please use pattern XX-XX-XX, where" +
+            " X - is number.")
+    private String phoneNumber;
 
     private String department;
 
@@ -50,6 +64,14 @@ public class Employee {
         carsList.put("BMW", "BMW");
         carsList.put("Audi", "Audi");
         carsList.put("Mercedes-benz", "Mercedes");
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String[] getLanguages() {

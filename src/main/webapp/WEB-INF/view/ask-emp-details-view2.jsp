@@ -32,6 +32,11 @@
     <br>
     <br>
     Salary <form:input path="salary"/>
+    <form:errors path="salary"/>
+    <br>
+    <br>
+    Phone number <form:input path="phoneNumber"/>
+    <form:errors path="phoneNumber"/>
     <br>
     <br>
 <%--За выпадающий список отвечает форма select, параметром при открытии обязательно передается путь
