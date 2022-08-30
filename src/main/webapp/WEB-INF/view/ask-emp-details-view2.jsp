@@ -21,9 +21,14 @@
     и что на ней будет написано. После нажания кнопки submit срабатывают сеттеры, они задают
     значения соответствующим полям класса Employee. Перейдем в MySecondController на 26 строку--%>
     Name <form:input path="name"/>
+    <%--Данная запись в случае возникновения ошибки ищет сообщение ошибки в поле
+    name объекта modelAttribute и выводит его рядом с формой где возникла ошибка. Теперь
+    перейдем в MySecondController внутрь метода showEmployeeDetails()--%>
+    <form:errors path="name"/>
     <br>
     <br>
     Surname <form:input path="surname"/>
+    <form:errors path="surname"/>
     <br>
     <br>
     Salary <form:input path="salary"/>
