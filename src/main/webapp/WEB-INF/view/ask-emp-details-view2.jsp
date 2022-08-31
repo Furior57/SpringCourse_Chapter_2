@@ -39,6 +39,10 @@
     <form:errors path="phoneNumber"/>
     <br>
     <br>
+    Email <form:input path="email"/>
+    <form:errors path="email"/>
+    <br>
+    <br>
 <%--За выпадающий список отвечает форма select, параметром при открытии обязательно передается путь
 к атрибуту в который будет записываться значение, у нас это поле department класса Employee--%>
     Department <form:select path="department">

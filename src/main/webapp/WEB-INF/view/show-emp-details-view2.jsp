@@ -24,6 +24,9 @@ Your car: ${employee.car}
 Your phone number: ${employee.phoneNumber}
 <br>
 <br>
+Your email: ${employee.email}
+<br>
+<br>
 <%--Здесь новый для нас синтаксис. Тег ul означает немаркированный список(unorderedList),
 открывая этот тег мы сообщаем что сейчас передадим несколько объектов, каждый объект
 открывается и закрывается тегом li(list item), мы же поспользуемся преимуществами java, а

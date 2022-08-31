@@ -1,6 +1,8 @@
 package main.Part_four_SpringMVC.service.controllers.beans;
 
 
+import main.Part_four_SpringMVC.service.validation.CheckEmail;
+
 import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -58,6 +60,8 @@ public class Employee {
     private String[] languages;
 
     private Map<String, String> carsList;
+    @CheckEmail
+    private String email;
 
     public Employee() {
         carsList = new HashMap<>();
@@ -128,6 +132,14 @@ public class Employee {
 
     public void setSalary(int salary) {
         this.salary = salary;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
